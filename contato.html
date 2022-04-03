@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Forneria Darosci</title>
+		<link rel="stylesheet" href="style-reset.css">
+		<link rel="stylesheet" href="style-contato.css">
+	</head>
+	<body>
+		<header>
+			<div class="top-box">
+				<h1><img src="forneria-pictures/logo.jpg" alt="Logo da Forneria Darosci"></h1>
+				<nav>
+					<ul>
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./produtos.html">Pizzas</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e Sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+				
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
+				
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+				
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="30" rows="10" id="mensagem" class="input-padrao" placeholder="O que você gostaria de nos dizer?"></textarea>
+				
+				<fieldset>
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="nosso-contato" value="email" id="radio-email" required>Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="nosso-contato" value="telefone" id="radio-telefone" required>Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="nosso-contato" value="whatsapp" id="radio-whatsapp" required checked>WhatsApp</label>
+				</fieldset>
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+				
+				
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades de cardápio e promoções por Email?</label>
+				
+				<input type="submit" value="Enviar" class="enviar"></input>
+			</form>
+			<table>
+				<thead>
+					<tr>
+						<th>Dias</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Quinta</td>
+						<td>19h ~ 23h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>19h ~ 23h</td>
+					</tr>
+					<tr>
+						<td>Sábado</td>
+						<td>19h ~ 23h</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Faça a sua reserva!</td>
+					</tr>
+				</tfoot>
+			</table>
+		</main>
+		<footer>
+			<a href="contato.html"><img src="forneria-pictures/logo-footer.jpg" alt="Logo da Forneria Darosci"></a>
+			<p class="copyright">&copy Copyright Forneria Darosci - 2022</p>
+		</footer>
+	</body>
+</html>

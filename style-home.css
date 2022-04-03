@@ -1,0 +1,192 @@
+/* PSEUDO ELEMENTS = :before, :after, :first-line, :hover, :active... */
+
+body {
+	font-family: 'Bellefair', serif;
+	background: linear-gradient(90deg, #FEFEDCff, #FEFEFE, #FEFEDCff);
+}
+
+header {
+	background: #FEFEDCff;
+	padding: 20px 0;
+}
+
+.top-box {
+	position: relative;
+	width: 940px; /*BOM ESPAÇAMENTO CENTRAL PADRÃO DE SITES*/
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 205px;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	transition: 0.5s color;
+}
+
+nav a:hover {
+	color: #FF6900ff;
+	text-decoration: underline overline;
+}
+
+.banner {
+	width: 100%;
+}
+
+.main-content {
+	padding: 2em 5em 0;
+}
+
+main h2 {
+	text-align: center;
+	font-size: 2em;
+    margin: 0 0 1em;
+	padding: 30px 0;
+	background: linear-gradient(90deg, #FEFEDCff 1%, #FF6900ff, #FEFEDCff 99%);
+}
+
+.main-text {
+	width: 940px;
+	margin: 0 auto;
+	padding: 20px 0;
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.main-text p {
+	margin: 0 0 1em;
+}
+
+/* CSS para as imagens ao lado do texto principal */
+.main-text img {
+	width: 20%;
+}
+
+.column {
+	float: left;
+	width: 55%;
+	padding: 5px;
+}
+
+.main-text p {
+	text-align: center;
+}
+
+.main-text strong {
+	font-size: 18px;
+	color: #6F1D1B;
+	font-weight: bold;
+}
+
+.main-text em {
+	margin: 0 0 20px;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.mapa {
+	padding: 3em 0;
+}
+
+.mapa h2 {
+	padding: 30px 0;
+	background: linear-gradient(90deg, #FEFEDCff 1%, #FF6900ff, #FEFEDCff 99%);
+}	
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+/*USANDO A PSEUDO ELEMENTO "AFTER"*/
+.mapa p:after {
+	content: "❤";
+}
+
+.benefits {
+	padding: 30px 0;
+	text-align: center;
+	background: linear-gradient(90deg, #FEFEDCff 1%, #FF6900ff, #FEFEDCff 99%);
+}
+
+.items {
+	font-style: italic;
+}
+
+.items:nth-child(2n) {
+	font-weight: bold;
+}
+
+.benefits h3 {
+	text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.benefits li {
+	display: inline;
+	vertical-align: top;
+	width: 20%;
+	margin: 2%;
+    font-size: 17px;
+}
+
+.benefits li:hover {
+    font-size: 25px;
+	padding: 10px;
+	border: 1px solid #FEFEDCff;
+	border-radius: 10px;
+}
+
+.video {
+	margin: 2em;
+	text-align: center;
+	padding: 4em auto;
+}
+
+.video h4 {
+	margin: 4em 0 1em;
+}
+
+footer {
+	text-align: center;
+	background: #FEFEDCff;
+	padding: 15px;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.top-box, .main-text {
+		width: auto;
+	}
+	
+	.top-box img, p.column, img.column {
+		width: 100%;
+	}
+	
+	.main-content {
+		padding: 2em 1em 0;
+	}
+	nav {
+		position: static;
+		text-align: center;
+	}
+}

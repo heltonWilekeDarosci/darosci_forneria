@@ -1,0 +1,150 @@
+header {
+	background: #FEFEDCff;
+	padding: 20px 0;
+}
+
+.top-box {
+	position: relative;
+	width: 940px; /*BOM ESPAÇAMENTO PADRÃO DE SITES*/
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 205px;
+	right: 0px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	transition: 0.5s all;
+}
+
+nav a:hover {
+	color: #FF6900ff;
+	text-decoration: underline overline;
+}
+
+body {
+	font-family: 'Bellefair', serif;
+	background: linear-gradient(90deg, #FEFEDCff, #FEFEFE, #FEFEDCff);
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 20px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.input-padrao:hover {
+	transform: scale(1.05);
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: #FF6900ff;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 23px;
+	font-family: georgia, serif;
+	border: none;
+	border-radius: 10px;
+	transition: 0.5s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: red;
+	transform: scale(1.25);
+}
+
+table {
+	margin: 20px 0 40px;
+	box-shadow: 10px 10px 15px 0px;
+}
+
+thead {
+	background: #FEFEDCff;
+	color: #000000;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+tfoot {
+	text-align: center;
+	font-weight: bold;
+}
+
+footer {
+	text-align: center;
+	background: #FEFEDCff;
+	padding: 15px;
+}
+
+.copyright {
+	font-size: 13px;
+	margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.top-box, main {
+		width: auto;
+		padding: 0 15px;
+	}
+	
+	.top-box img {
+		width: 100%;
+	}
+	
+	nav {
+		position: static;
+		text-align: center;
+	}
+	
+	nav li {
+		display: inline;
+		margin: 0 0 0 15px;
+	}
+	
+	form {
+		margin: 40px 15px;
+	}
+	
+	table {
+		margin: 20px 100px 40px;
+	}
+}
